@@ -9,9 +9,9 @@ namespace MyLib
     public class Triangle
     {
 
-        public double SideA;
-        public double SideB;
-        public double SideC;
+        public double SideA { get; set; }
+        public double SideB { get; set; }
+        public double SideC { get; set; }
         public bool IsTriangleExists(Triangle triangle)
         {
             if (triangle.SideA + triangle.SideB > triangle.SideC && triangle.SideA + triangle.SideB >
