@@ -10,7 +10,8 @@ namespace MathTaskClassLibraryTests
         [TestMethod]
         public void TestIsTriangleExists()
         {
-            LibraryTests library = new Library();
+            Library library = new Library();
+            // Создаем треугольник со сторонами 3, 4, 5
             Triangle triangle1 = new Triangle(3, 4, 5);
             bool result1 = library.TestIsTriangleExists(triangle1);
             Console.WriteLine("Треугольник со сторонами 3, 4, 5 существует: " + result1);
