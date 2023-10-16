@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MyLib
 {
-    internal class Triangle
+    public class Triangle
     {
+        public double SideA;
+        public double SodeB;
+        public double SideC;
     }
 }
