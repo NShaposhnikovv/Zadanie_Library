@@ -14,7 +14,8 @@ namespace MyLib
         public double SideC;
         public bool IsTriangleExists(Triangle triangle)
         {
-            if (triangle.SideA + triangle.SideB > triangle.SideC && triangle.SideA + triangle.SideB > triangle.SideB && triangle.SideA + triangle.SideC > triangle.SideA)
+            if (triangle.SideA + triangle.SideB > triangle.SideC && triangle.SideA + triangle.SideB >
+                triangle.SideB && triangle.SideA + triangle.SideC > triangle.SideA)
             {
                 return true;
             

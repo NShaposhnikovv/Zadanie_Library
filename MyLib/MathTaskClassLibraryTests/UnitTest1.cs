@@ -1,26 +1,22 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MathTaskClassLibrary;
+using 
 
 namespace MathTaskClassLibraryTests
 {
     [TestClass]
-    public class TriangleTests
+    public class LibraryTests
     {
         [TestMethod]
-        public void RectangleArea_3and5_15returned()
+        public void TestIsTriangleExists()
         {
-            // исходные данные
-            int a = 3;
-            int b = 5;
-            int expected = 15;
+            LibraryTests library = new Library();
+            Triangle triangle1 = new Triangle(3, 4, 5);
+            bool result1 = library.TestIsTriangleExists(triangle1);
+            Console.WriteLine("Треугольник со сторонами 3, 4, 5 существует: " + result1);
+            // Создание треугольника со сторонами 1, 2, 3
 
-            // получение значения с помощью тестируемого метода
-            Triangle g = new Triangle();
-            int actual = g.RectangleArea(a, b);
 
-            // сравнение ожидаемого результата с полученным
-            Assert.AreEqual(expected, actual);
         }
     }
 }
