@@ -8,8 +8,19 @@ namespace MyLib
 {
     public class Triangle
     {
+
         public double SideA;
-        public double SodeB;
+        public double SideB;
         public double SideC;
+
+        public Triangle(double sideA, double sideB, double sideC)
+        {
+            SideA = sideA;
+            SideB = sideB;
+            SideC = sideC;
+        }
+
+
+
     }
 }
