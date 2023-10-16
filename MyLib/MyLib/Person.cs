@@ -9,7 +9,13 @@ using System.Text;
 
 namespace MyLib
 {
-    public class Class1
+    public class Person
     {
+        string name;
+        public Person(string name)
+        {
+            this.name = name;
+        }
+        public void Print() => Console.WriteLine($"Name: {name}");
     }
 }
