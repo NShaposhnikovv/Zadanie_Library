@@ -12,13 +12,20 @@ namespace MyLib
         public double SideA;
         public double SideB;
         public double SideC;
-
-        public Triangle(double sideA, double sideB, double sideC)
+        public bool IsTriangleExists(Triangle triangle)
         {
-            SideA = sideA;
-            SideB = sideB;
-            SideC = sideC;
+            if (triangle.SideA + triangle.SideB > triangle.SideC && triangle.SideA + triangle.SideB > triangle.SideB && triangle.SideA + triangle.SideC > triangle.SideA)
+            {
+                return true;
+            
+            }
+            else
+            {
+                return false;
+            }
+
         }
+
 
 
 
