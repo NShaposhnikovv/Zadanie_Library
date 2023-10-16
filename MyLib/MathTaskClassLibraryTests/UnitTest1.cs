@@ -9,16 +9,15 @@ namespace MathTaskClassLibraryTests
     public class LibraryTests
     {
         [TestMethod]
-        public void TestIsTriangleExists()
+        public void isTriangleExist_ValidSides_ReturnsTrue()
         {
-        
-            // Создаем треугольник со сторонами 3, 4, 5
-            Triangle triangle = new Triangle(3, 4, 5);
-            bool result1 = Triangle.TestIsTriangleExists(triangle);
-            Console.WriteLine("Треугольник со сторонами 3, 4, 5 существует: " + result1);
-            // Создание треугольника со сторонами 1, 2, 3
-
-
+            double a = 3;
+            double b = 4;
+            double c = 5;
+            bool result = Triangle.IsTriangleExists(a, b, c);
+            Assert.IsTrue(result);
         }
+
+
     }
 }
